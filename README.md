@@ -1,11 +1,29 @@
-# sherpa2
+# Sherpa 2
 
-`models.py` contains the pytorch model classes. For now, we use the sherpamodel only which essentially is a version of the original sherpa model found in the sherpa repository but in pytorch instead of tensorflow. It might be that the sherpamodel here is a little bit bigger than the original one but it is not vastly different. 
+Sherpa 2 is a PyTorch-based framework for explainable EEG classification.  
+The accompanying paper is in preparation (Julie Holthe, Sophia Sylvester, Mikkel Haug, Merle Sagehorn, Joanna Kisker,  
+Thomas Gruber, and Benjamin Schöne).  
+A link to the preprint or published version will be added here once available.
 
-`classification_model.py` handles the hyperparameter optimization (*objective*) and the training of the model (*train_model*) using kfold cross validation (*run_kfold_evaluation*). We first split of a random hold out test set (10%) and retrain the model on all data except this hold out test set after cross validation to get a good estimate of generalization ability (within the dataset). 
+SHERPA 2 is an extension of the first SHERPA paper (Paper: https://link.springer.com/article/10.3758/s13428-023-02335-7, Github: https://github.com/sophiasylvester/sherpa)
 
-The *argumentparser* makes sure we can run the training and testing from `run_all_sources.py`to make it easier to switch between processes and models and run the different parts of the dataset back to back. 
+---
 
-Lastly, `classification_model.py` runs SHAP as a basis for SHERPA. 
+## Overview
 
-`sherpa.py` is not in the last state for the moment and is not used right now as everything regarding to that is run in Matlab.
+The code provides an end-to-end workflow for:
+
+1. Loading preprocessed EEG data (`.npy` format)
+2. Training and cross-validating the model with Optuna hyperparameter tuning
+3. Evaluating performance on a holdout test set
+4. Computing SHAP values for model interpretation
+
+Only the **SherpaModel** was used in the final experiments.  
+Other models (EEGNet, MidCNN, DeeperTemporalCNN) were used in preliminary experiments and are included for comparison.
+
+---
+
+## Further analyses
+
+Further analyses were carried out in Matlab. SHAP values were averaged over trials and squared to provide SHAP Energy values. With those values, electrode clusters of interest were identified and plots were created
+splitting the SHAP Energy values for positive and negative contributions.
