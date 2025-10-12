@@ -1,11 +1,13 @@
-# Sherpa 2
+# Sherpa II
 
-Sherpa 2 is a PyTorch-based framework for explainable EEG classification.  
-The accompanying paper is in preparation (Julie Holthe, Sophia Sylvester, Mikkel Haug, Merle Sagehorn, Joanna Kisker,  
-Thomas Gruber, and Benjamin Schöne).  
+Sherpa II is a PyTorch-based framework for explainable EEG classification.  
+The accompanying paper is in preparation: 
+
+Holthe, J., Sylvester, S., Haug, M., Sagehorn, M., Kisker, J., Gruber, T., and Schöne, B. (2025). SHERPA II: Polarity-Sensitive Explainable AI for decoding facilitative and suppressive contributions in perceptual inference. (*in prep*)
+
 A link to the preprint or published version will be added here once available.
 
-SHERPA 2 is an extension of the first SHERPA paper (Paper: https://link.springer.com/article/10.3758/s13428-023-02335-7, Github: https://github.com/sophiasylvester/sherpa)
+SHERPA II is an extension of the first SHERPA paper (Paper: https://link.springer.com/article/10.3758/s13428-023-02335-7, Github: https://github.com/sophiasylvester/sherpa)
 
 ---
 
