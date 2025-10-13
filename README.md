@@ -3,7 +3,7 @@
 Sherpa II is a PyTorch-based framework for explainable EEG classification.  
 The accompanying paper is in preparation: 
 
-Holthe, J., Sylvester, S., Haug, M., Sagehorn, M., Kisker, J., Gruber, T., and Schöne, B. (2025). SHERPA II: Polarity-Sensitive Explainable AI for decoding facilitative and suppressive contributions in perceptual inference. (*in prep*)
+**Holthe, J., Sylvester, S., Haug, M., Sagehorn, M., Kisker, J., Gruber, T., and Schöne, B. (2025). SHERPA II: Polarity-Sensitive Explainable AI for decoding facilitative and suppressive contributions in perceptual inference. (*in prep*)**
 
 A link to the preprint or published version will be added here once available.
 
@@ -13,9 +13,9 @@ SHERPA II is an extension of the first SHERPA paper (Paper: https://link.springe
 
 ## Overview
 
-The code provides an end-to-end workflow for:
+The code provides the workflow for:
 
-1. Loading preprocessed EEG data (`.npy` format)
+1. Loading preprocessed EEG data
 2. Training and cross-validating the model with Optuna hyperparameter tuning
 3. Evaluating performance on a holdout test set
 4. Computing SHAP values for model interpretation
