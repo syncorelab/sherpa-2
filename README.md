@@ -3,7 +3,7 @@
 Sherpa II is a PyTorch-based framework for explainable EEG classification.  
 The accompanying paper is in preparation: 
 
-**Sylvester, S., Holthe, J., Alcalà-Haug, M., Sagehorn, M., Kisker, J., Gruber, T., and Schöne, B. (2025). SHERPA II: Explainable AI EEG Analysis Reveals Recurrent
+**Sylvester, S., Holthe, J., Alcalà-Haug, M., Sagehorn, M., Gruber, T., and Schöne, B. (2025). SHERPA II: Explainable AI EEG Analysis Reveals Recurrent
 Neural Dynamics in Human Face Perception. (*in prep*)**
 
 A link to the preprint or published version will be added here once available.
